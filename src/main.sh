@@ -7,6 +7,7 @@ for ((i = 1; i <= $it; i++)); do
 	done
 	printf "\n"
 	cowsay "Ok, now I'm going to commit and push $i"
+	printf "\n"
 	date >>../res/log.txt
 	git add ../res/log.txt
 	git commit -m "log $i"
@@ -15,5 +16,4 @@ for ((i = 1; i <= $it; i++)); do
 		printf "="
 	done
 	printf "\n"
-	sleep 1
 done
